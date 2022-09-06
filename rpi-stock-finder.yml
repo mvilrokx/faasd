@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.205.5:8080
+functions:
+  rpi-stock-finder:
+    lang: golang-middleware
+    handler: ./rpi-stock-finder
+    image: docker.io/vilrokx/rpi-stock-finder:latest
+
